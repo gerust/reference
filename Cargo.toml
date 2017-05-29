@@ -1,0 +1,5 @@
+[workspace]
+members = ["config", "bin", "app", "app/controllers"]
+
+[dependencies]
+gerust-app = { path = "../gerust/gerust-app" }

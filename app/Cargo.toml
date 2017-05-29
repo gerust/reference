@@ -1,0 +1,14 @@
+[package]
+name = "app"
+version = "0.1.0"
+authors = ["Florian Gilcher <florian.gilcher@asquera.de>"]
+
+[lib]
+name = "app"
+path = "app.rs"
+
+[dependencies]
+gerust-app = { path = "../../gerust/gerust-app" }
+gerust-controller = { path = "../../gerust/gerust-controller" }
+gerust-router = { path = "../../gerust/gerust-router" }
+gerust-context = { path = "../../gerust/gerust-context" }
