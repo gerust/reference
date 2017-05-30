@@ -4,6 +4,10 @@ version = "0.1.0"
 authors = ["Florian Gilcher <florian.gilcher@asquera.de>"]
 
 [dependencies]
+gerust-controller = { path = "../../../gerust/gerust-controller" }
+gerust-context = { path = "../../../gerust/gerust-context" }
+gerust-router = { path = "../../../gerust/gerust-router" }
+gerust-http = { path = "../../../gerust/gerust-http" }
 
 [lib]
 name = "controllers"
