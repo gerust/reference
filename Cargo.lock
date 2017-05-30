@@ -18,10 +18,26 @@ dependencies = [
 [[package]]
 name = "config"
 version = "0.1.0"
+dependencies = [
+ "app 0.1.0",
+ "controllers 0.1.0",
+ "gerust-app 0.1.0",
+ "gerust-context 0.1.0",
+ "gerust-controller 0.1.0",
+ "gerust-http 0.1.0",
+ "gerust-router 0.1.0",
+ "url 1.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
 
 [[package]]
 name = "controllers"
 version = "0.1.0"
+dependencies = [
+ "gerust-context 0.1.0",
+ "gerust-controller 0.1.0",
+ "gerust-http 0.1.0",
+ "gerust-router 0.1.0",
+]
 
 [[package]]
 name = "futures"
@@ -44,6 +60,15 @@ name = "gerust-controller"
 version = "0.1.0"
 dependencies = [
  "gerust-context 0.1.0",
+]
+
+[[package]]
+name = "gerust-http"
+version = "0.1.0"
+dependencies = [
+ "gerust-context 0.1.0",
+ "gerust-routing 0.1.0",
+ "url 1.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
