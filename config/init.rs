@@ -9,8 +9,7 @@ pub fn init() {
     println!("Initializing project");
 
     let mut app: App<HttpContext> = App::new();
-    let factory = factory::<HttpContext, EchoController<HttpContext>>();
-    app.controllers_mut().register_controller(Box::new(factory));
+    app.controllers_mut().register_controller::<EchoController<_>>();
 
     routes::draw();
 }
